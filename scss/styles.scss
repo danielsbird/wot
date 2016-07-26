@@ -5,6 +5,8 @@ Variables
 $primary: #234454;
 $accent: #f3735c;
 
+$first-breakpoint: 800px;
+
 /* ==========================
 Base
 ========================== */
@@ -43,6 +45,17 @@ Container
 
 .full-page {
   height: 100vh;
+}
+
+@media (min-width: $first-breakpoint) {
+  .container {
+    padding: 0;
+  }
+
+  .wrapper {
+    margin: 0 auto;
+    width: 80%;
+  }
 }
 
 /* ==========================
@@ -101,6 +114,22 @@ ul.nav {
   }
 }
 
+@media (min-width: $first-breakpoint) {
+  header {
+    flex-direction: row;
+  }
+
+  .logo {
+    margin-right: auto;
+  }
+
+  ul.nav {
+    li {
+      padding: 1rem 2rem;
+    }
+  }
+}
+
 /* ==========================
 Banner
 ========================== */
@@ -114,12 +143,14 @@ Banner
     font-size: 2.8rem;
     font-weight: 700;
     letter-spacing: 3px;
+    margin: 2rem 0;
     text-align: center;
   }
 
   p {
     font-size: 1.5rem;
     font-weight: 300;
+    margin: 2rem 0;
     text-align: center;
   }
 }
@@ -128,4 +159,14 @@ Banner
   height: 200px;
   width: 200px;
   margin: 0 auto;
+}
+
+@media (min-width: $first-breakpoint) {
+  .btn {
+    margin-top: 1.5rem;
+  }
+  .compass {
+    height: 250px;
+    width: 250px;
+  }
 }

@@ -32,6 +32,13 @@ Container
 .full-page {
   height: 100vh; }
 
+@media (min-width: 800px) {
+  .container, .container-blue {
+    padding: 0; }
+
+  .wrapper {
+    margin: 0 auto;
+    width: 80%; } }
 /* ==========================
 Buttons
 ========================== */
@@ -74,6 +81,15 @@ ul.nav {
     display: inline;
     list-style-type: none; }
 
+@media (min-width: 800px) {
+  header {
+    flex-direction: row; }
+
+  .logo {
+    margin-right: auto; }
+
+  ul.nav li {
+    padding: 1rem 2rem; } }
 /* ==========================
 Banner
 ========================== */
@@ -85,15 +101,25 @@ Banner
     font-size: 2.8rem;
     font-weight: 700;
     letter-spacing: 3px;
+    margin: 2rem 0;
     text-align: center; }
   .banner p {
     font-size: 1.5rem;
     font-weight: 300;
+    margin: 2rem 0;
     text-align: center; }
 
 .compass {
   height: 200px;
   width: 200px;
   margin: 0 auto; }
+
+@media (min-width: 800px) {
+  .btn {
+    margin-top: 1.5rem; }
+
+  .compass {
+    height: 250px;
+    width: 250px; } }
 
 /*# sourceMappingURL=styles.css.map */
