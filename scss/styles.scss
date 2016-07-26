@@ -1,0 +1,131 @@
+/* ==========================
+Variables
+========================== */
+
+$primary: #234454;
+$accent: #f3735c;
+
+/* ==========================
+Base
+========================== */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Roboto', 'sans-serif';
+}
+
+.center {
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ==========================
+Container
+========================== */
+
+.container {
+  padding: 0 1rem;
+}
+
+.container-blue {
+  @extend .container;
+  background-color: $primary;
+  color: white;
+}
+
+.full-page {
+  height: 100vh;
+}
+
+/* ==========================
+Buttons
+========================== */
+
+.btn {
+  display: inline;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+}
+
+.orange {
+  background-color: $accent;
+  color: white;
+}
+
+/* ==========================
+Header
+========================== */
+
+header {
+  display: flex;
+  flex-direction: column;
+
+  .logo {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    i {
+      font-size: 2rem;
+      font-weight: 300;
+      margin-right: 1rem;
+      font-weight: 400;
+    }
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+ul.nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+
+  li {
+    display: inline;
+    list-style-type: none;
+  }
+}
+
+/* ==========================
+Banner
+========================== */
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+
+  h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-align: center;
+  }
+
+  p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: center;
+  }
+}
+
+.compass {
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
+}
