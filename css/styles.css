@@ -11,33 +11,30 @@ html {
   box-sizing: inherit; }
 
 body {
-  font-family: 'Roboto', 'sans-serif'; }
+  font-family: 'Roboto', 'sans-serif';
+  background-color: #234454; }
 
 .center {
   margin: 0 auto; }
 
 a {
+  color: white;
   text-decoration: none; }
+
+.avoid-wrap {
+  display: inline-block; }
 
 /* ==========================
 Container
 ========================== */
-.container, .container-blue {
+.container {
+  color: white;
   padding: 0 1rem; }
 
-.container-blue {
-  background-color: #234454;
-  color: white; }
-
-.full-page {
-  height: 100vh; }
-
 @media (min-width: 800px) {
-  .container, .container-blue {
-    padding: 0; }
-
-  .wrapper {
+  .container {
     margin: 0 auto;
+    padding: 0;
     width: 80%; } }
 /* ==========================
 Buttons
@@ -121,5 +118,81 @@ Banner
   .compass {
     height: 250px;
     width: 250px; } }
+/* ==========================
+Events
+========================== */
+.events {
+  margin: 3rem auto 0 auto;
+  width: 86%; }
+  .events .date-strikethrough {
+    margin-bottom: 3rem; }
+
+.event-cards {
+  margin-bottom: 4rem; }
+
+@media (min-width: 1000px) {
+  .event-cards {
+    display: flex;
+    justify-content: space-between; } }
+.date-strikethrough {
+  border-bottom: 1px solid #21242b;
+  color: #21242b;
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 0.1rem;
+  margin: 0 auto;
+  text-align: center; }
+  .date-strikethrough span {
+    background-color: #234454;
+    padding: 0 2rem; }
+
+.event {
+  background-color: #ced5d6;
+  border-radius: 2px;
+  color: #21242b;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem; }
+
+@media (min-width: 1000px) {
+  .event {
+    flex-basis: 30%;
+    margin-right: 1rem; }
+
+  .event:last-child {
+    margin-right: 0; } }
+.event-date {
+  background-color: #f3735c;
+  border: 1px solid #f15f44;
+  border-top: 1px solid #f58774;
+  border-radius: 2px 2px 0 0;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding: 0.5rem; }
+  .event-date .weekday {
+    font-size: 1rem; }
+
+.event-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 0.5rem; }
+
+.event-guest {
+  margin-top: 0.5rem; }
+
+.event-description {
+  margin-top: 0; }
+
+.event-time-location {
+  font-size: 0.8rem;
+  margin-top: auto;
+  margin-bottom: 0; }
+
+.coming-soon {
+  color: #21242b;
+  font-weight: 300;
+  text-align: center; }
 
 /*# sourceMappingURL=styles.css.map */
