@@ -4,8 +4,12 @@ Variables
 
 $primary: #234454;
 $accent: #f3735c;
+$accent-lighten: lighten($accent, 5%);
+$accent-darken: darken($accent, 5%);
+$black: #21242b;
 
 $first-breakpoint: 800px;
+$second-breakpoint: 1000px;
 
 /* ==========================
 Base
@@ -19,6 +23,7 @@ html {
 
 body {
   font-family: 'Roboto', 'sans-serif';
+  background-color: $primary;
 }
 
 .center {
@@ -26,7 +31,12 @@ body {
 }
 
 a {
+  color: white;
   text-decoration: none;
+}
+
+.avoid-wrap {
+  display: inline-block;
 }
 
 /* ==========================
@@ -34,26 +44,14 @@ Container
 ========================== */
 
 .container {
-  padding: 0 1rem;
-}
-
-.container-blue {
-  @extend .container;
-  background-color: $primary;
   color: white;
-}
-
-.full-page {
-  height: 100vh;
+  padding: 0 1rem;
 }
 
 @media (min-width: $first-breakpoint) {
   .container {
-    padding: 0;
-  }
-
-  .wrapper {
     margin: 0 auto;
+    padding: 0;
     width: 80%;
   }
 }
@@ -169,4 +167,105 @@ Banner
     height: 250px;
     width: 250px;
   }
+}
+
+/* ==========================
+Events
+========================== */
+
+.events {
+  margin: 3rem auto 0 auto;
+  width: 86%;
+
+  .date-strikethrough {
+    margin-bottom: 3rem;
+  }
+}
+
+.event-cards {
+  margin-bottom: 4rem;
+}
+
+@media (min-width: $second-breakpoint) {
+  .event-cards {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.date-strikethrough {
+  border-bottom: 1px solid $black;
+  color: $black;
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 0.1rem;
+  margin: 0 auto;
+  text-align: center;
+
+  span {
+    background-color: $primary;
+    padding: 0 2rem;
+  }
+}
+
+.event {
+  background-color: #ced5d6;
+  border-radius: 2px;
+  color: $black;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: $second-breakpoint) {
+  .event {
+    flex-basis: 30%;
+    margin-right: 1rem;
+  }
+
+  .event:last-child {
+    margin-right: 0;
+  }
+}
+
+.event-date {
+  background-color: $accent;
+  border: 1px solid $accent-darken;
+  border-top: 1px solid $accent-lighten;
+  border-radius: 2px 2px 0 0;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding: 0.5rem;
+
+  .weekday {
+    font-size: 1rem;
+  }
+}
+
+.event-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 0.5rem;
+}
+
+.event-guest {
+  margin-top: 0.5rem;
+}
+
+.event-description {
+  margin-top: 0;
+}
+
+.event-time-location {
+  font-size: 0.8rem;
+  margin-top: auto;
+  margin-bottom: 0;
+}
+
+.coming-soon {
+  color: $black;
+  font-weight: 300;
+  text-align: center;
 }
