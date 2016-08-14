@@ -21,6 +21,9 @@ a {
   color: white;
   text-decoration: none; }
 
+a.underline {
+  text-decoration: underline; }
+
 .avoid-wrap {
   display: inline-block; }
 
@@ -193,5 +196,15 @@ Events
   color: #21242b;
   font-weight: 300;
   text-align: center; }
+
+/* ==========================
+About
+========================== */
+.about {
+  font-weight: 300;
+  line-height: 1.4rem;
+  max-width: 750px;
+  margin: 2rem auto 0 auto;
+  width: 75%; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -35,6 +35,10 @@ a {
   text-decoration: none;
 }
 
+a.underline {
+  text-decoration: underline;
+}
+
 .avoid-wrap {
   display: inline-block;
 }
@@ -268,4 +272,16 @@ Events
   color: $black;
   font-weight: 300;
   text-align: center;
+}
+
+/* ==========================
+About
+========================== */
+
+.about {
+  font-weight: 300;
+  line-height: 1.4rem;
+  max-width: 750px;
+  margin: 2rem auto 0 auto;
+  width: 75%;
 }
