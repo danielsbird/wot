@@ -211,5 +211,17 @@ About
 @media (min-width: 800px) {
   .about {
     width: 75%; } }
+/* ==========================
+Contact
+========================== */
+.contact {
+  text-align: center; }
+  .contact i {
+    color: #f3735c;
+    font-size: 1.5rem;
+    margin-right: 0.5rem; }
+  .contact h2 {
+    display: inline-block;
+    font-weight: 300; }
 
 /*# sourceMappingURL=styles.css.map */
