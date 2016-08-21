@@ -292,3 +292,22 @@ About
     width: 75%;
   }
 }
+
+/* ==========================
+Contact
+========================== */
+
+.contact {
+  text-align: center;
+
+  i {
+    color: $accent;
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+  }
+
+  h2 {
+    display: inline-block;
+    font-weight: 300;
+  }
+}
